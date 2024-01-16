@@ -18,17 +18,15 @@
 main{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 8rem;
-    margin-right: 8rem;        
+    justify-content:space-around;     
 }
 
 .area-texto{
     margin-top: 15%;
-    margin-bottom: 50px;
-    margin-right: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     text-transform: lowercase;
     border: none;
 }
@@ -37,6 +35,8 @@ main{
     .area-texto:focus{
         outline: none;
     }
+
+
 
 .informacion{
     width: 205px;
@@ -51,18 +51,14 @@ main{
 
 .caja-mensaje{
     margin-top: 5%;
+    display: flex;
+    flex-direction: column;
     text-transform: lowercase;
-    width: 400px;
-    height: 520px;
-
 }
 
-@media screen and (min-widht: 720px) {
+@media screen and (max-width:520px) {
     .caja-mensaje {
-        margin-top: 10rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        margin-top: 20%
     }
 }
 
@@ -74,10 +70,7 @@ main{
     background-color: #FFFFFF;
     border: none;
     border-radius: 24px;
-    color: #0a3871;
-    margin-left: 98px;
-    margin-top: 20px;
-    padding-left: 20px;
+    color: #0a3871;   
 }
 
 .mensaje:focus{
@@ -158,7 +151,6 @@ main{
     gap: 8px;
     border: 1px solid #0A3871;
     border-radius: 24px;
-    margin-left: 110px;
     position: absolute;
 }
 
