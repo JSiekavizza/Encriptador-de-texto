@@ -16,31 +16,70 @@
 }
 
 main{
+    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;     
+    justify-content:space-around;
+}
+
+@media screen and (max-width:920px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.container-area-texto {
+    margin-top: 5%;
+    flex-direction: column;
+    text-transform: lowercase;
+    align-items:flex-start;
+}
+
+@media screen and (max-width:920px) {
+    .container-area-texto {
+        width: 341px;
+        height: 484px;
+        margin-top: 5%;
+        padding: 2rem;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .container-area-texto {
+        margin-top: 10%;
+        padding: 3rem;
+        align-items:center;
+
+    }
 }
 
 .area-texto{
-    margin-top: 15%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    height: 410px;
+    width: 520px;
     text-transform: lowercase;
     border: none;
 }
+
+/*@media screen and (max-width:520px) {
+    .container-area-texto {
+        margin-top: 10%;
+        padding: 3rem;
+        align-items:flex-start;
+
+    }
+}*/
 
 ::placeholder {color: black;}
     .area-texto:focus{
         outline: none;
     }
 
-
-
 .informacion{
     width: 205px;
     height: 18px;
+    padding: 2rem;
     font-family: 'Inter';
     font-style:normal;
     font-weight: 400 bold;
@@ -48,6 +87,8 @@ main{
     line-height: 150%;
     color: #495057;
 }
+
+
 
 .caja-mensaje{
     margin-top: 5%;
@@ -59,6 +100,14 @@ main{
 @media screen and (max-width:520px) {
     .caja-mensaje {
         margin-top: 20%
+    }
+}
+
+@media screen and (max-width:920px) {
+    .caja-mensaje {
+        margin-top: 5%;
+        padding: 2rem;
+        align-items: center;
     }
 }
 
@@ -80,7 +129,6 @@ main{
 
 .botones{
     display: flex;
-    position: absolute;
     width: 500px;
     height: 67px;
     flex-direction: row;
@@ -145,13 +193,11 @@ main{
     color: #0a3871;
     display:inline-block;
     flex-direction: row;
-    align-items: flex-start;
     padding: 24px;
     margin-top: 25px;
     gap: 8px;
     border: 1px solid #0A3871;
     border-radius: 24px;
-    position: absolute;
 }
 
 .copiar p{
