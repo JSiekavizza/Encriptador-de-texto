@@ -16,60 +16,32 @@
 }
 
 main{
-    margin-top: 5%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
+    flex-direction: column;
+    padding: 3rem;
 }
 
-@media screen and (max-width:920px) {
+@media screen and(max-width:920px) {
     main {
         display: flex;
-        flex-direction: column;
-    }
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }   
 }
 
 .container-area-texto {
-    margin-top: 5%;
+    margin-top: 1rem;
     flex-direction: column;
     text-transform: lowercase;
     align-items:flex-start;
 }
 
-@media screen and (max-width:920px) {
-    .container-area-texto {
-        width: 341px;
-        height: 484px;
-        margin-top: 5%;
-        padding: 2rem;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width:520px) {
-    .container-area-texto {
-        margin-top: 10%;
-        padding: 3rem;
-        align-items:center;
-
-    }
-}
-
 .area-texto{
     height: 410px;
-    width: 520px;
+    width: 380px;
     text-transform: lowercase;
     border: none;
 }
-
-/*@media screen and (max-width:520px) {
-    .container-area-texto {
-        margin-top: 10%;
-        padding: 3rem;
-        align-items:flex-start;
-
-    }
-}*/
 
 ::placeholder {color: black;}
     .area-texto:focus{
@@ -91,23 +63,16 @@ main{
 
 
 .caja-mensaje{
-    margin-top: 5%;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-transform: lowercase;
 }
 
-@media screen and (max-width:520px) {
+@media screen and(min-width:920px) {
     .caja-mensaje {
-        margin-top: 20%
-    }
-}
-
-@media screen and (max-width:920px) {
-    .caja-mensaje {
-        margin-top: 5%;
-        padding: 2rem;
-        align-items: center;
+        display: flex;
     }
 }
 
@@ -145,7 +110,7 @@ main{
     gap: 8px;
     background: #0A3871;
     border-radius: 24px;
-    width: 230px;
+    width: 180px;
     height: 67px;
 }
 
@@ -172,7 +137,7 @@ main{
     border: 1px solid #0A3871;
     border-radius: 24px;
     background: #D8DFE8;
-    width: 230px;
+    width: 180px;
     height: 67px;
 }
 
